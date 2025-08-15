@@ -18,6 +18,51 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet">
+
+    <!-- Popup dos Produtos -->
+    <div id="popup-produtos" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center"
+        style="font-family: 'fontepadrao';">
+        <div class="bg-white rounded-lg p-8 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-bold title-font text-gray-900" style="font-family: 'fontepadraodois';">
+                    <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                        style="width: 25px; height: 25px;">
+                    Nossos Produtos
+                    <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                        style="width: 25px; height: 25px;">
+                </h2>
+                <button onclick="fecharPopup()" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Produto 1 -->
+                <div class="bg-gray-50 rounded-lg p-4 hover:shadow-lg transition-all">
+                    <img src="img/keune.webp" alt="Produtos Keune" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Linha Keune</h3>
+                    <p class="text-gray-600">Produtos profissionais para cuidados com cabelo e barba.</p>
+                </div>
+                <!-- Produto 2 -->
+                <div class="bg-gray-50 rounded-lg p-4 hover:shadow-lg transition-all">
+                    <img src="img/keune2.jpg" alt="Produtos para Selagem"
+                        class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Produtos para Selagem</h3>
+                    <p class="text-gray-600">Tratamentos especializados para seus cabelos.</p>
+                </div>
+                <!-- Produto 3 -->
+                <div class="bg-gray-50 rounded-lg p-4 hover:shadow-lg transition-all">
+                    <img src="img/keune3.jpg" alt="Produtos para Barba"
+                        class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Produtos para Barba</h3>
+                    <p class="text-gray-600">Óleos, bálsamos e produtos especiais para barba.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -68,7 +113,7 @@
         }
 
         .woodd-bg {
-            background-image: url('img/Fotos/Pallazzo/IMG_0125.jpg');
+            background-image: url('img/fundokeune2.png');
             background-size: cover;
         }
 
@@ -138,7 +183,9 @@
                     <img src="img/iconeprincipal.jpg" alt="Logo da Barbearia Pallazzo" class="w-16 h-16">
                 </div>
                 <h1 class="title-font text-4xl font-bold">
-                    <span style="color: #000;  font-family: 'barbearia'; -webkit-text-stroke-width: 0.1px; -webkit-text-stroke-color: #ffffff;" class="text-amber-500">
+                    <span
+                        style="color: #000;  font-family: 'barbearia'; -webkit-text-stroke-width: 0.1px; -webkit-text-stroke-color: #ffffff;"
+                        class="text-amber-500">
                         BARBEARIA
                     </span>
                     <img src="img/nomepallazzopadrao.jpg" alt="Nome da Barbearia Pallazzo" class="inline-block"
@@ -261,7 +308,7 @@
                     Nossa História
                     <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                         style="width: 25px; height: 25px;">
-        
+
                 </h2>
                 <div class="bandeira" style="display: flex; flex-direction: row;">
                     <div style="background-color: #139337;" class="w-24 h-1 mx-auto"></div>
@@ -292,9 +339,9 @@
                         <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                             style="width: 25px; height: 25px;">
                         Desde de 2017
-                    <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
-                        style="width: 25px; height: 25px;">
-        
+                        <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                            style="width: 25px; height: 25px;">
+
                     </h3>
                     <p class="mb-6" style="text-align: justify;">
                         Na charmosa cidade onde tradição e estilo se encontram, nasceu a <b>Barbearia Pallazzo</b> um
@@ -324,9 +371,9 @@
                         <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                             style="width: 25px; height: 25px;">
                         Nossa Missão
-                                <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
-                        style="width: 25px; height: 25px;">
-        
+                        <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                            style="width: 25px; height: 25px;">
+
                     </h4>
                     <p>
                         O acabamento é sempre impecável, como um terno feito sob medida em Savile Row.</br></br>
@@ -365,9 +412,9 @@
                     <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                         style="width: 25px; height: 25px;">
                     Nossos Serviços
-                            <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                    <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                         style="width: 25px; height: 25px;">
-        
+
                 </h2>
 
                 <div class="bandeira" style="display: flex; flex-direction: row;">
@@ -376,7 +423,8 @@
                     <div style="background-color: #E01C1B;" class="w-24 h-1 mx-auto"></div>
                 </div>
                 <p class="mt-6 max-w-2xl mx-auto" style="color: #FFFFFF; font-family: 'fontepadrao';">
-                    Espaço com design classico, lustres com cristais, cortinas de veludo elegantes e atendimento personalizado.
+                    Espaço com design classico, lustres com cristais, cortinas de veludo elegantes e atendimento
+                    personalizado.
                 </p>
                 <h2 style="font-style: italic; color: #FFFFFF; font-family: 'fontepadraodois';"
                     class="title-font text-2xl font-bold mb-4">Sinta-se um rei em cada
@@ -457,7 +505,8 @@
                     <div class="p-6">
                         <h3 class="title-font text-2xl font-bold mb-3" style="font-family: 'fontepadrao';">Selagem
                             Capilar</h3>
-                        <p class="mb-4">Produtos sem formol qualidade no alinhamento e na estrutura dos fios capilares.</p>
+                        <p class="mb-4">Produtos sem formol qualidade no alinhamento e na estrutura dos fios capilares.
+                        </p>
                         <div class="flex justify-between items-center">
                             <span class="text-amber-600 font-bold text-xl">R$ 350,00</span>
                             <a href="https://wa.me/47992903000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20massagem%20relaxante!"
@@ -516,12 +565,56 @@
             <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                 style="width: 25px; height: 25px;">
             Nossa Marca
-                    <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
-                        style="width: 25px; height: 25px;">
-        
+            <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                style="width: 25px; height: 25px;">
+
         </h2>
-        <img src="img/nomepallazzopadrao.jpg">
-        <p style="color: #ffffff;">[DETALHAMENTO DA MARCA]</p>
+        <div class="bandeira" style="display: flex; flex-direction: row; width: 82%;">
+            <div style="background-color: #139337;" class="w-24 h-1 mx-auto"></div>
+            <div style="background-color: #FFFFFF;" class="w-24 h-1 mx-auto"></div>
+            <div style="background-color: #E01C1B;" class="w-24 h-1 mx-auto"></div>
+        </div>
+
+        <p class="mt-6 max-w-2xl mx-auto" style="color: #ffffff;">A marca traz historia, elegancia, sofisticação e
+            exclusividade.</p>
+        <br>
+        <div class="separamarca"
+            style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-bottom: 20px;">
+            <img src="img/fat1nome.jpg" alt="Fleur de Lis" class="inline-block mr-2"
+                style="width: 120px; height: 100px;">
+            <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                style="width: 25px; height: 25px;">
+
+            <img src="img/fat2nome.jpg" alt="Fleur de Lis" class="inline-block mr-2"
+                style="width: 120px; height: 100px;">
+            <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                style="width: 25px; height: 25px;">
+            <img src="img/fat3nome.jpg" alt="Fleur de Lis" class="inline-block mr-2"
+                style="width: 120px ; height: 100px;">
+        </div>
+
+        <div class="desmembramentomarca">
+            <p class="mt-6 max-w-2xl mx-auto" style="color: #ffffff;">
+                <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                    style="width: 25px; height: 25px;">
+
+                Detalhamento do nome PA . LLA . ZZO (a pronuncia das três ultimas letras ZZO é "tisso").
+            </p>
+            </br>
+            <div class="parte1 flex flex-row items-center mb-6">
+                <img src="img/fat4nome.jpg" alt="Fleur de Lis" class="inline-block mr-2"
+                    style="width: 100px; height: 100px;">
+                <p class="mt-6 max-w-2xl mx-auto" style="color: #ffffff; font-family: 'fontepadrao'; font-size: 14pt;">
+                    As duas letras ZZ, remete as navalhas usadas no séculos 19 e 20, para fazer um barbear com
+                    excelencia.</p>
+            </div>
+            <div class="parte2 flex flex-row items-center mb-6">
+                <img src="img/fat5nome.jpg" alt="Fleur de Lis" class="inline-block mr-2"
+                    style="width: 100px; height: 100px;">
+                <p class="mt-6 max-w-2xl mx-auto" style="color: #ffffff; font-family: 'fontepadrao'; font-size: 14pt;">A
+                    estrela dentro da letra O assemelha-se a mensão de cassinos bandeira da Itália.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Gallery Section -->
@@ -532,9 +625,9 @@
                     <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                         style="width: 25px; height: 25px;">
                     Nossa Galeria
-            <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                    <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                         style="width: 25px; height: 25px;">
-        
+
                 </h2>
                 <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
                 <p class="mt-6 max-w-2xl mx-auto">
@@ -582,9 +675,9 @@
                     <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                         style="width: 25px; height: 25px;">
                     Depoimentos
-                           <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                    <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                         style="width: 25px; height: 25px;">
-        
+
                 </h2>
                 <div class="bandeira" style="display: flex; flex-direction: row;">
                     <div style="background-color: #139337;" class="w-24 h-1 mx-auto"></div>
@@ -742,19 +835,81 @@
                     <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                         style="width: 25px; height: 25px;">
                     Nossa Localização
-                         <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                    <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
                         style="width: 25px; height: 25px;">
-        
+
                 </h2>
                 <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
             </div>
 
-            <div class="overflow-hidden rounded-lg shadow-lg mb-20">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.561853770396!2d-48.59752972455262!3d-27.138607076513253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8afcb8b559da3%3A0x747a25cbc2369ae!2sAv.%20Nereu%20Ramos%2C%205282%20-%20Meia%20Praia%2C%20Itapema%20-%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1754970828517!5m2!1spt-BR!2sbr"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" style="font-family: 'fontepadrao';">
+                <!-- Endereço 1 -->
+                <div class="bg-white overflow-hidden shadow-md service-card transition duration-300 border-2">
+                    <img src="img/coliseu-roma.jpg" alt="Corte de cabelo" class="w-full h-58 object-cover">
+                    <div class="p-6">
+                        <h3 class="title-font text-2xl font-bold mb-3"
+                            style="font-family: 'fontepadrao'; display: flex; flex-direction: row; align-items: center;">
+                            <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                                style="width: 25px; height: 25px;">Unidade 1
+                        </h3>
+                        <p class="mb-4">Av. Nereu Ramos 5282 sala 2, meia praia - Itapema.</p>
+                        <p class="mb-4">Horário Funcionamento:</br>Seg-Sex 09:00 - 20:00</br>Sáb 09:00 - 18:00</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://maps.app.goo.gl/whX1mTZNxenTRmsw7" target="_blank"
+                                style="background-color: #272424; color: #ffffff; padding: 12px 24px; text-decoration: none;">Ver
+                                no mapa</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endereço 2 -->
+                <div class="bg-white overflow-hidden shadow-md service-card transition duration-300 border-2">
+                    <img src="img/coliseu-de-roma1.jpg" alt="Corte de cabelo" class="w-full h-58 object-cover">
+                    <div class="p-6">
+                        <h3 class="title-font text-2xl font-bold mb-3"
+                            style="font-family: 'fontepadrao'; display: flex; flex-direction: row; align-items: center;">
+                            <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                                style="width: 25px; height: 25px;">Unidade 2
+                        </h3>
+                        <p class="mb-4">Av. Nereu Ramos 3131 sala 3, meia praia - Itapema</p>
+                        <p class="mb-4">Horário Funcionamento:</br>Seg-Sex 09:00 - 20:00</br>Sáb 09:00 - 18:00</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://maps.app.goo.gl/BQ724d5RS8XiPcZCA" target="_blank"
+                                style="background-color: #272424; color: #ffffff; padding: 12px 24px; text-decoration: none;">Ver
+                                no mapa</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endereço 3 -->
+                <div class="bg-white overflow-hidden shadow-md service-card transition duration-300 border-2">
+                    <img src="img/coliseu-de-roma-curiosidades.jpg" alt="Corte de cabelo"
+                        class="w-full h-58 object-cover">
+                    <div class="p-6">
+                        <h3 class="title-font text-2xl font-bold mb-3"
+                            style="font-family: 'fontepadrao'; display: flex; flex-direction: row; align-items: center;">
+                            <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                                style="width: 25px; height: 25px;">Unidade 3
+                        </h3>
+                        <p class="mb-4">Rua Sílvio Camargo 320, sl 108 Porto belo - pereque ( dentro do viva park )</p>
+                        <p class="mb-4">Horário Funcionamento:</br>Seg-Sex 09:00 - 20:00</br>Sáb 09:00 - 18:00</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://maps.app.goo.gl/8oZ86YcmKzXpfB9p6" target="_blank"
+                                style="background-color: #272424; color: #ffffff; padding: 12px 24px; text-decoration: none;">Ver
+                                no mapa</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="text-center mb-10 pt-12">
+            <h2 style="font-family: 'fontepadrao'; font-size: 14pt; font-style: italic;"
+                class="title-font font-bold mb-4">
+                <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                    style="width: 25px; height: 25px;">
+                Visite uma de nossas filiais e venha conhecer nossos serviços.
+            </h2>
         </div>
     </section>
 
@@ -770,7 +925,7 @@
                             class="title-font text-6xl font-bold mb-6 text-black">PALLAZZO</h2>
                         <h2 style="color: #BF934C; font-family: 'fontepadraodois'; text-align: center;"
                             class="title-font text-6xl font-bold mb-6 text-black">PRODUTOS</h2>
-                        <a href="#" target="_blank"
+                        <a href="#" target="_blank" id="ver-produtos"
                             class="bg-[#111111] text-white py-3 px-8 hover:bg-[#222222] transition-all duration-300 text-center w-full md:w-auto">
                             Ver Produtos
                         </a>
@@ -782,43 +937,59 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-12">
+    <footer class="bg-black text-white py-12" style="background-color: #272424;">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8">
+            <div class="grid md:grid-cols-4 gap-10">
                 <div>
-                    <div class="flex items-center mb-4">
-                        <div class="text-3xl mr-2 text-amber-500">
-                            <i style="color: #BF934C;" class="fas fa-cut"></i>
-                        </div>
-                        <h3 class="title-font text-2xl font-bold">
-                            <span style="color: #BF934C;" class="text-amber-500">Barberia</span> PALLAZZO
-                        </h3>
+                    <div class="flex items-center mb-4" id="footer-icon">
+                        <img src="img/iconeprincipalsemfundo.png" alt="Ícone Principal" class="w-14 h-14 mr-2">
+                        <img src="img/nomepallazzopadrao.jpg" alt="Ícone Principal" class="w-17 h-12 ml-2">
                     </div>
                     <p class="mb-4">
                         Tradição e estilo italiano. A arte da barbearia clássica com toques modernos.
                     </p>
                     <div class="flex space-x-4">
+                        <!--
                         <a href="#" class="text-white hover:text-amber-500 transition">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="text-white hover:text-amber-500 transition">
-                            <i class="fab fa-instagram"></i>
+                        -->
+                        <a href="https://www.instagram.com/barbeariapallazzo/" target="_blank"
+                            class="text-white hover:text-amber-500 transition">
+                            <i class="fab fa-instagram" style="font-size: 18pt;"></i>
                         </a>
+                        <!--
                         <a href="#" class="text-white hover:text-amber-500 transition">
                             <i class="fab fa-twitter"></i>
                         </a>
+                    -->
                     </div>
                 </div>
 
                 <div>
-                    <h4 style="color: #BF934C;" class="title-font text-xl font-bold mb-4 text-amber-500">Horário</h4>
+                    <h4 style="color: #BF934C; font-family: 'fontepadraodois';"
+                        class="title-font text-xl font-bold mb-4 text-amber-500">
+                        <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                            style="width: 25px; height: 25px;">
+                        Horário
+                        <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                            style="width: 25px; height: 25px;">
+                    </h4>
                     <ul class="space-y-2">
-                        <li>Segunda - Sábado: 9h - 20h</li>
+                        <li>Segunda - Sexta: 9h - 20h</li>
+                        <li>Sábado: 9h - 18h</li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 style="color: #BF934C;" class="title-font text-xl font-bold mb-4 text-amber-500">Contato</h4>
+                    <h4 style="color: #BF934C; font-family: 'fontepadraodois';"
+                        class="title-font text-xl font-bold mb-4 text-amber-500">
+                        <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                            style="width: 25px; height: 25px;">
+                        Contato
+                        <img src="img/fleur-de-lis.png" alt="Fleur de Lis" class="inline-block mr-2"
+                            style="width: 25px; height: 25px;">
+                    </h4>
                     <ul class="space-y-2">
                         <li class="flex items-center">
                             <i style="color: #BF934C;" class="fas fa-map-marker-alt mr-2 text-amber-500"></i>
@@ -903,6 +1074,36 @@
         });
 
         // --- LÓGICA DO POPUP CORRIGIDA ---
+
+        // Funções para controlar o popup de produtos
+        document.getElementById('ver-produtos').addEventListener('click', function (e) {
+            e.preventDefault();
+            abrirPopup();
+        });
+
+        function abrirPopup() {
+            document.getElementById('popup-produtos').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Previne rolagem do body
+        }
+
+        function fecharPopup() {
+            document.getElementById('popup-produtos').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restaura rolagem do body
+        }
+
+        // Fecha o popup ao clicar fora dele
+        document.getElementById('popup-produtos').addEventListener('click', function (e) {
+            if (e.target === this) {
+                fecharPopup();
+            }
+        });
+
+        // Fecha o popup com a tecla ESC
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                fecharPopup();
+            }
+        });
 
         // Welcome Popup Functions
         function closeWelcomePopup() {
